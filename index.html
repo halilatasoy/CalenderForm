@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+	<meta charset="utf-8">
+	<title> Calender & Form </title>
+	<link rel="stylesheet" href="style.css" />
+	
+</head>
+
+<body>
+
+	<table id="calender">
+		<caption> May 2000 </caption> 
+		<thead>		
+			<tr>  <!-- head row of table -->
+				<th> Mon </th>
+				<th> Tues </th>
+				<th> Wen </th>
+				<th> Thu </th>
+				<th> Fri </th>
+				<th> Sat </th>
+				<th> Sun </th>
+			</tr>
+		</thead>
+			
+		<tbody>
+		<tr>
+				<td colspan="1" class="pad"> &nbsp; </td>
+				<td> 1 </td>
+				<td> 2 </td>
+				<td> 3 </td>
+				<td> 4 </td>
+                                <td> 5 </td>
+				<td> 6 </td>
+			</tr>
+			
+			<tr>
+			        <td> 7 </td>
+				<td> 8 </td>
+				<td> 9 </td>
+				<td> 10 </td>
+				<td> 11 </td>
+                                <td> 12 </td>
+				<td> 13 </td>
+			</tr>
+			
+			<tr>
+				
+				<td> 14 </td>
+				<td> 15 </td>
+				<td> 16 </td>
+				<td> 17 </td>
+				<td> 18 </td>
+                                <td> 19 </td>
+				<td> 20 </td>
+				
+			</tr>
+			
+			<tr>
+				
+				<td> 21 </td>
+				<td> 22 </td>
+				<td> 23 </td>
+				<td> 24 </td>
+				<td> 25 </td>
+                                <td id="today"> 26 </td>
+ 				<td> 27 </td>
+				
+			</tr>
+			
+			<tr>
+				
+				<td> 28 </td>
+				<td> 29 </td>
+				<td> 30 </td>
+				<td> 31 </td>
+				<td class="pad"> &nbsp; </td>
+				
+			</tr>
+		</tbody>
+		
+		<tfoot>
+			<td colspan="1" id="prev"> &laquo; Apr </td>
+			<td class="pad"> &nbsp; </td>
+			<td colspan="5" id="next"> Jan &raquo; </td>
+		</tfoot>
+	</table>
+
+	<div class="box">
+		<form method="get" action="ornek.php">
+			<fieldset>
+	<legend> Membership Details </legend>
+				
+	                        <p> 
+					<label> Member Name: </label>
+					<input type="text" name="member" placeholder="Enter name" />
+                                </p>
+				
+				<p> 
+					<label> First Attendence ? </label>
+					<input type="checkbox" name="first"  />
+				</p>
+				
+				<p> 
+					<label> Client Type: </label>
+					<input type="radio" name="type" value="Prep" /> Prep
+					<input type="radio" name="type" value="1th" /> 1th
+					<input type="radio" name="type" value="2th" /> 2th
+				</p>
+				
+				<p> 
+					<label> Attandence Date: </label>
+					<input type="date" name="date"  />
+				</p>
+				
+				<input type="submit" text="Add Meeting" />
+				
+			</fieldset>
+	
+		</form>
+	
+	</div>
+
+</body>
+
+
+</html>
